@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Bouton pour l'enregistrement audio -->
+    <ImageButton
+        android:id="@+id/btnRecordAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#CCFF90"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <!-- TextView pour le titre de la liste -->
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRecordAudio"
+        android:layout_marginTop="21dp"
+        android:background="#B9F6CA"
+        android:gravity="center"
+        android:onClick="loginGoogleAccount"
+        android:text="CONNEXION/ACTUALISATION"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/signoutbuton"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRecordAudio"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@+id/signInButton"
+        android:background="#FFEB3B"
+        android:onClick="logoutGoogleAccount"
+        android:text="Deconnexion"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInButton"
+        android:layout_marginTop="14dp"
+        android:background="#FFEB3B"
+        android:text="Selectionne une date"
+        android:textColor="#000000" />
+
+    <!-- ListView pour afficher la liste des événements -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="386dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/btnAction"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        android:background="#CBDDD0"
+        android:divider="@android:drawable/dialog_holo_dark_frame" />
+
+    <!-- SearchView pour la recherche -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="382dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="1dp"
+        android:background="#84FFFF"
+        android:queryHint="Donnez vos instructions" />
+
+</RelativeLayout>

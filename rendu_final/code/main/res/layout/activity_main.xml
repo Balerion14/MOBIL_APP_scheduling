@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DF81888E"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feature1Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="773dp"
+        android:layout_height="131dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/background_dark"
+        android:text="ConvoClair"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cardview_light_background"
+        app:cornerRadius="8dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/feature2Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feature2Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="773dp"
+        android:layout_height="131dp"
+        android:layout_margin="16dp"
+        android:text="SpeakSmart"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cardview_light_background"
+        app:cornerRadius="8dp"
+        app:iconTint="#8BC34A"
+        app:layout_constraintBottom_toTopOf="@+id/feature3Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feature1Button"
+        app:strokeColor="@color/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/feature3Button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="773dp"
+        android:layout_height="131dp"
+        android:layout_margin="16dp"
+        android:text="VoicePlanner"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cardview_light_background"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editInfoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feature1Button"
+        app:layout_constraintVertical_bias="0.582"
+        app:strokeColor="@color/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editInfoButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Mise à jour des information de votre compte"
+        android:textColor="@color/black"
+        app:backgroundTint="#BACDED"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feature2Button"
+        app:layout_constraintVertical_bias="0.993" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/deco"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Déconnexion"
+        android:textColor="@color/black"
+        app:backgroundTint="#BACDED"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feature2Button"
+        app:layout_constraintVertical_bias="0.831" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

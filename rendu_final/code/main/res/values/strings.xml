@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">projet</string>
+    <string name="entrer_le_nom_du_fichier">Entrez le nom du fichier</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="appuyez_et_maintenez">Appuyez et maintenez pour enregistrer</string>
+    <string name="enregistrement_termine">Enregistrement terminé</string>
+    <string name="enregistrement_commence">Enregistrement commencé</string>
+    <string name="sauvegarde_terminee">Sauvegarde terminée</string>
+</resources>
